@@ -1,0 +1,192 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Wrap Designer</title>     
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script type="text/javascript" language="JavaScript" src="script.js"></script>
+  </head>
+
+<!-- ************************************************************************************************************ -->
+
+  <body onload="init();">
+
+
+    <table border="0" WIDTH="100%" >
+      <tr align="center" height=100 valign="center" width=100% border="3">
+        <td  colspan=2 class="Blankbox" BORDER="0">
+
+        <h3>Chris Stanton's</h3>
+        <h2>Guide Wrap Designer</h2>
+
+
+    <table align="center" cellpadding=0 cellspacing=0>
+	      <tr align="center" height=20>
+	      <!-- left blank -->
+	        <td id="leftBlank"  width=320></td>
+	        <!-- left outer trim -->
+	        <td id="leftOuterTrim"  width=5><IMG id="leftOuterTrimImg" SRC="threads/0002.jpg" ALIGN="middle" ></td>
+	        <!-- left inner trim -->
+	        <td id="leftInnerTrim"  width=5><IMG id="leftInnerTrimImg" SRC="threads/0050.jpg" ALIGN="middle" ></td>
+	        <!-- left wrap -->
+    	    <td id="leftWrap" width=40><IMG id="leftWrapImg" SRC="threads/0326.jpg" ALIGN="middle" ></td>
+    	    <!-- left underwrap -->
+	        <td id="leftUnderwrap"  width=15><IMG id="leftUnderwrapImg" SRC="threads/0257.jpg" ALIGN="middle" ></td>
+	        <!-- left center trim -->
+	        <td id="leftCenterTrim"width=1><IMG id="leftCenterTrimImg" SRC="threads/0326.jpg" ALIGN="middle" ></td>
+	        <!-- left inner underwrap -->
+	        <td id="leftInnerUnderwrap"  width=3><IMG id="leftInnerUnderwrapImg" SRC="threads/0257.jpg" ALIGN="middle" ></td>
+	        <!-- center trim -->
+	        <td id="centerTrim" width=5><IMG id="centerTrimImg" SRC="threads/0326.jpg" ALIGN="middle" ></td>
+	        <!-- right inner underwrap -->
+	        <td id="rightInnerUnderwrap" width=3><IMG id="rightInnerUnderwrapImg" SRC="threads/0257.jpg" ALIGN="middle" ></td>
+	        <!-- right center trim -->
+	        <td id="rightCenterTrim"  width=1><IMG id="rightCenterTrimImg" SRC="threads/0326.jpg" ALIGN="middle" ></td>
+	        <!-- right underwrap -->
+	        <td id="rightUnderwrap"  width=15><IMG id="rightUnderwrapImg" SRC="threads/0257.jpg" ALIGN="middle" ></td>
+	        <!-- right wrap -->
+	        <td id="rightWrap" width=40><IMG id="rightWrapImg" SRC="threads/0326.jpg" ALIGN="middle" ></td>
+	        <!-- right inner trim -->
+	        <td id="rightInnerTrim" width=5 BORDER="0"><IMG id="rightInnerTrimImg" SRC="threads/0050.jpg" ALIGN="middle" ></td>
+	        <!-- right outer trim -->
+	        <td id="rightOuterTrim"  width=5><IMG id="rightOuterTrimImg" SRC="threads/0002.jpg" ALIGN="middle" ></td>
+	        <!-- right blank -->
+	        <td id="rightBlank"  width=320></td>
+	      </tr>
+      </td>
+     </tr>
+    </table>
+          <!-- </td> was removed from this line -->
+          <!-- </tr> was removed from this line -->
+        <tr align="center" valign="center" width=100% height=55>
+          <td  align="center" colspan=2 >
+            <b>Image Size Multipler: </b>
+             <input  id="oSize" size=2 style="inputbox" onchange="newSize()">
+          </td>
+        </tr>
+
+
+        <tr align="center" valign="center" width=100% height=55>
+          <td  align="center" colspan=2 ><br>
+            <b>Blank color:</b>
+            <select id="oblankcolor" onchange="newblank()">
+                <!-- RodGeeks Blank Colors -->
+             <option value=""> RodGeeks Blank Colors </option>
+              <option value="#000000"> Black </option>
+              <option value="#1e201e"> Clear Gloss </option>
+              <option value="#444644"> Raw </option>
+              <option value="#FFFFFF"> White </option>
+              <option value="#e2e8e2"> Ivory </option>
+              <option value="#053a71"> Blue </option>
+              <option value="#88abcf"> Light Blue </option>
+              <option value="#02143d"> Dark Blue </option>
+              <option value="#11afb9"> Neon Blue </option>
+              <option value="#911711"> Red </option>
+              <option value="#7e1f1f"> Red Metallic </option>
+              <option value="#6c2604"> Brick Red </option>
+              <option value="#2b101d"> Maroon </option>
+              <option value="#c26203"> Orange </option>
+              <option value="#ff8301"> Neon Orange </option>
+              <option value="#99530a"> Burnt Orange Metallic </option>
+              <option value="#006400"> Green </option>
+              <option value="#4b8b29"> Light Green Metallic </option>
+              <option value="#012e01"> Dark Green </option>
+              <option value="#053223"> Dark Green Metallic </option>
+              <option value="#6ce006"> Neon Green </option>
+              <option value="#523b93"> Purple </option>
+              <option value="#925d9f"> Lavender Metallic </option>
+              <option value="#d193a6"> Pink Pearl </option>
+              <option value="#ff00b0"> Neon Pink </option>
+              <option value="#813f07"> Copper </option>
+              <option value="#9f9458"> Gold Metallic </option>
+              <option value="#f6be17"> Yellow </option>
+
+                <!-- DH Custom Rods and Tackle Blank Colors -->
+              <option value=""> DH Custom Rods and Tackle Blank Colors </option>
+              <option value="#ffffff"> White </option>
+              <option value="#6ce006"> Neon Green </option>
+              <option value="#f1281e"> Red </option>
+              <option value="#88abcf"> Baby Blue </option>
+              <option value="#989898"> Gray </option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr height=40 valign="center" >
+          <td width=50% align="right">
+            <i># of turns</i> <input  id="oWrapWidth" size=2 style="inputbox" onchange="newWrapWidth()">
+            <b>Guide Foot Wrap Color:</b>
+            <select id="oWrap" onchange="newWrap()"></select>
+            &nbsp &nbsp &nbsp &nbsp &nbsp
+          </td>
+          <td>&nbsp &nbsp &nbsp &nbsp &nbsp
+            <b>Underwrap Color:</b>
+             <select id="oUnderwrap"  onchange="newUnderwrap()">
+               <option value="None">None</option>
+             </select>
+          </td>
+        </tr>
+
+
+        <tr height=55 valign="center" >
+          <td width=50% align="right">
+            <b>Outer Trim Band Color:</b>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<br>
+            <i># of turns</i> <input  id="oOTWidth" size=2 style="inputbox" onchange="newOTWidth()">&nbsp&nbsp&nbsp
+              <select id="oOTrim" onchange="newOTrim()">
+                <option value="None">None</option>
+              </select>&nbsp &nbsp &nbsp &nbsp &nbsp
+          </td>
+          <td width=50%  valign="center" >
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <b>Inner Trim Band Color: </b><br>
+            &nbsp &nbsp &nbsp &nbsp &nbsp
+            <i># of turns</i> <input  id="oITWidth" size=2 style="inputbox" onchange="newITWidth()">&nbsp&nbsp&nbsp
+            <select id="oITrim" onchange="newITrim()">
+              <option value="None">None</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr height=55 valign="center" >
+          <td width=50% colspan=2 align="center">
+            <b>Center Trim Band Color: </b><br>
+            <i># of turns</i> <input  id="oCTWidth" size=2 style="inputbox" onchange="newCTWidth()">&nbsp&nbsp&nbsp
+            <select id="oCTrim" onchange="newCTrim()">
+              <option value="None">None</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr height=80 valign="center" >
+          <td width=50% colspan=2 align="center">
+            <b>Outer Center Trim Band Color: </b><br>
+            <i># of turns</i>
+              <input  id="oOCTWidth" size=2 style="inputbox" onchange="newOCTWidth()">&nbsp&nbsp&nbsp
+                <select id="oOCTrim" onchange="newOCTrim()">
+                  <option value="None">None</option>
+                </select><br>
+            <i>Distance To Center Trim Band:</i> <input  id="oD2CT" size=2 style="inputbox" onchange="newD2CT()">
+          </td>
+        </tr>
+
+
+        <tr align="center" valign="center" width=100% height=80>
+          <td  align="center" colspan=2>
+            <b>Guide Wrap Name: </b><input  id="oName" size=70 style="inputbox" >
+          </td>
+        </tr>
+
+
+        <tr align="center" valign="center" width=100% height=55>
+          <td  align="center" colspan=2 >
+            <input type=button value="Print wrap"onClick="writeMTable()">
+          </td>
+        </tr>
+
+    </table>
+  </body>
+</html>

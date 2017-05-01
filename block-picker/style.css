@@ -1,0 +1,79 @@
+
+
+body {
+  margin: 0px;
+  background: rgba(248,80,50,1);
+  background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 31%, rgba(246,41,12,1) 55%, rgba(240,47,23,1) 78%, rgba(231,56,39,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(31%, rgba(241,111,92,1)), color-stop(55%, rgba(246,41,12,1)), color-stop(78%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+  background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 31%, rgba(246,41,12,1) 55%, rgba(240,47,23,1) 78%, rgba(231,56,39,1) 100%);
+  background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 31%, rgba(246,41,12,1) 55%, rgba(240,47,23,1) 78%, rgba(231,56,39,1) 100%);
+  background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 31%, rgba(246,41,12,1) 55%, rgba(240,47,23,1) 78%, rgba(231,56,39,1) 100%);
+  background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 31%, rgba(246,41,12,1) 55%, rgba(240,47,23,1) 78%, rgba(231,56,39,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  width: 100vw;
+  height: 40px;
+  border-top: 1px dashed grey;
+  border-bottom: 1px dashed grey;
+  font-family: American Captain, Helvetica, sans-serif;
+  font-size: 50px;
+  animation-name: example;
+  animation-duration: 4s
+}
+
+/*p {
+  display: block;
+  display: inline-flex;
+}*/
+
+.centered {
+ display: inline-flex;
+ /*align-items: center;*/
+ margin-left: 29%;
+ border: 2px solid black;
+}
+
+.colorPicked {
+  text-align: center;
+  font-family: cursive;
+}
+
+#red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 2px solid white;
+}
+
+#green {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: 2px solid white;
+}
+
+#blue {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 2px solid white;
+}
+
+#yellow {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 2px solid white;
+}
+
+@keyframes example {
+    from {color: : black;}
+    to {color: white;}
+}
